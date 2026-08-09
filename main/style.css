@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+    /* Main background */
+    background: linear-gradient(
+        135deg,
+        #0F172A 0%,
+        #111827 50%,
+        #0F172A 100%
+    );
+
+    color: #E5E7EB;
+    min-height: 100vh;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 50px;
+
+    /* Glass effect */
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid rgba(229, 231, 235, 0.08);
+
+    /* Keeps header visible */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* ================= LOGO ================= */
+
+h1 {
+    color: #E5E7EB;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+
+    cursor: pointer;
+
+    transition: color 0.3s ease;
+}
+
+h1:hover {
+    color: #9CAF88;
+}
+
+/* ================= NAVBAR ================= */
+
+nav ul {
+    display: flex;
+    align-items: center;
+
+    gap: 32px;
+
+    list-style: none;
+}
+
+/* ================= NAV LINKS ================= */
+
+nav ul li a {
+    position: relative;
+
+    display: inline-block;
+
+    text-decoration: none;
+    color: #E5E7EB;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    padding: 6px 2px;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+/* Hover */
+
+nav ul li a:hover {
+    color: #9CAF88;
+    transform: translateY(-2px);
+}
+
+/* ================= UNDERLINE ================= */
+
+nav ul li a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: -3px;
+
+    width: 0;
+    height: 2px;
+
+    background: #9CAF88;
+
+    border-radius: 10px;
+
+    transform: translateX(-50%);
+
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* ================= SECTIONS ================= */
+
+section {
+    min-height: 100vh;
+
+    padding: 100px 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ================= HEADINGS ================= */
+
+section h2 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+section p {
+    color: #94A3B8;
+    font-size: 18px;
+    max-width: 600px;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    padding: 80px 50px 25px;
+
+    background: rgba(15, 23, 42, 0.85);
+
+    border-top: 1px solid rgba(229, 231, 235, 0.08);
+}
+
+
+/* Main footer layout */
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+
