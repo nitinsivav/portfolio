@@ -174,3 +174,124 @@ footer {
 }
 
 
+/* ================= CONTACT ================= */
+
+.footer-contact {
+    max-width: 550px;
+}
+
+.footer-label {
+    color: #9CAF88;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.footer-contact h2 {
+    color: #E5E7EB;
+
+    font-size: 40px;
+    line-height: 1.2;
+
+    margin-bottom: 18px;
+}
+
+.footer-description {
+    color: #94A3B8;
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+
+/* Email */
+
+.email-link {
+    display: inline-block;
+
+    color: #E5E7EB;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    padding-bottom: 5px;
+
+    border-bottom: 1px solid #9CAF88;
+
+    transition:
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.email-link:hover {
+    color: #9CAF88;
+}
+
+
+/* ================= LINKS ================= */
+
+.footer-links {
+    display: flex;
+    gap: 80px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.footer-column h3 {
+    color: #E5E7EB;
+
+    font-size: 15px;
+
+    margin-bottom: 8px;
+}
+
+.footer-column a {
+    color: #94A3B8;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #9CAF88;
+
+    transform: translateX(3px);
+}
+
+
+/* ================= BOTTOM ================= */
+
+.footer-bottom {
+    max-width: 1200px;
+
+    margin: 70px auto 0;
+
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(229, 231, 235, 0.08);
+
+    display: flex;
+    justify-content: space-between;
+
+    color: #64748B;
+
+    font-size: 13px;
+}
