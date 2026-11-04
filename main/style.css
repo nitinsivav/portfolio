@@ -252,6 +252,72 @@ section p {
     margin-top: 18px;
 }
 
+#projects {
+    align-items: flex-start;
+}
+
+.projects-intro {
+    max-width: 820px;
+    margin-bottom: 28px;
+}
+
+.project-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(31, 77, 61, 0.2);
+    border-radius: 20px;
+    padding: 22px;
+    box-shadow: 0 12px 24px rgba(31, 77, 61, 0.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 34px rgba(31, 77, 61, 0.16);
+}
+
+.project-meta {
+    color: var(--moss);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.project-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(24px, 2.6vw, 30px);
+    color: var(--forest);
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 16px;
+    line-height: 1.65;
+    margin-bottom: 18px;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: var(--forest-deep);
+    font-size: 15px;
+    font-weight: 700;
+    border-bottom: 2px solid rgba(31, 77, 61, 0.3);
+    padding-bottom: 2px;
+    transition: color 0.25s ease, border-color 0.25s ease;
+}
+
+.project-card a:hover {
+    color: var(--moss);
+    border-color: var(--moss);
+}
+
 footer {
     padding: 80px 50px 25px;
     background: linear-gradient(160deg, var(--forest-deep) 0%, var(--forest) 100%);
@@ -382,6 +448,10 @@ footer {
         max-width: 620px;
     }
 
+    .project-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .footer-container {
         flex-direction: column;
         gap: 40px;
@@ -416,6 +486,10 @@ footer {
     .btn {
         width: 100%;
         text-align: center;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
     }
 
     .footer-links {
